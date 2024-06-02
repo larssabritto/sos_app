@@ -40,10 +40,18 @@ dependencies:
   shared_preferences: ^2.2.3
   flutter_secure_storage: ^9.2.2
   dio: ^5.4.3+1
+  flutter_launcher_icons: ^0.13.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_launcher_icons:
+   android: true
+   ios: true
+   image_path: "assets/logo.png"
+   remove_alpha_ios: true
+   min_sdk_android: 21
 
 
   # The "flutter_lints" package below contains a set of recommended lints to
@@ -51,7 +59,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.0
+flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -68,6 +76,10 @@ flutter:
   assets:
      - assets/images/
      - assets/images/onboarding/
+     - assets/logo.png
+
+
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
